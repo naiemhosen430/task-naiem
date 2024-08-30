@@ -1,112 +1,132 @@
 import Image from "next/image";
+import Header from "./_components/shared/Header";
+import InformaTionCart from "./_components/carts/InformaTionCart";
+import IconsCart from "./_components/carts/IconsCart";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-gradient-to-br max-w-[1440px] m-auto lg:p-10 p-2 min-h-screen to-[#090021] from-[#1c0c32]">
+      {/* header  */}
+      <Header
+        description={"Between our successful cases we have collaborated to be"}
+        title={"Successful cases"}
+      />
+
+      {/* information */}
+      <div className="pt-5">
+        <div className="lg:flex justify-center">
+          <div className="lg:flex lg:mt-[100px] lg:w-3/12 w-full lg:m-0 m-2 items-center justify-end">
+            <InformaTionCart point={"55M+"} title={"Transaction in Altcoins"} />
+            <div className="lg:block hidden">
+              <div className="h-[5px] bg-[#260d56] w-[60px]"></div>
+              <div className=" bg-[#260d56] w-[5px]"></div>
+            </div>
+          </div>
+          <div className="lg:flex lg:w-3/12 w-full lg:m-0 m-2 items-center justify-center">
+            <div className="lg:block hidden">
+              <div className="h-[5px] bg-[#260d56] w-[60px]"></div>
+            </div>
+            <InformaTionCart point={"250M+"} title={"Transaction in Bitcoin"} />
+            <div className="lg:block hidden">
+              <div className="h-[5px] bg-[#260d56] w-[60px]"></div>
+            </div>
+          </div>
+          <div className="lg:flex lg:mt-[100px] lg:w-3/12 w-full lg:m-0 m-2 items-center justify-start">
+            <div className="lg:block hidden">
+              <div className=" bg-[#260d56] w-[5px]"></div>
+              <div className="h-[5px] bg-[#260d56] w-[60px]"></div>
+            </div>
+            <InformaTionCart point={"23+"} title={"Total Projects"} />
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      {/* icon section  */}
+      <div className="flex py-6">
+        <IconsCart
+          icons={[
+            {
+              src: "/icons/icon1.png",
+              alt: "icon 1",
+            },
+            {
+              src: "/icons/icon2.png",
+              alt: "icon 2",
+            },
+            {
+              src: "/icons/icon3.png",
+              alt: "icon 3",
+            },
+            {
+              src: "/icons/icon4.png",
+              alt: "icon 4",
+            },
+            {
+              src: "/icons/icon5.jpeg",
+              alt: "icon 5",
+            },
+            {
+              src: "/icons/icon6.jpeg",
+              alt: "icon 6",
+            },
+            {
+              src: "/icons/icon7.jpeg",
+              alt: "icon 7",
+            },
+            {
+              src: "/icons/icon8.jpeg",
+              alt: "icon 8",
+            },
+            {
+              src: "/icons/icon9.jpeg",
+              alt: "icon 9",
+            },
+            {
+              src: "/icons/icon10.jpeg",
+              alt: "icon 10",
+            },
+            {
+              src: "/icons/icon11.png",
+              alt: "icon 11",
+            },
+            {
+              src: "/icons/icon12.jpeg",
+              alt: "icon 12",
+            },
+            {
+              src: "/icons/icon13.png",
+              alt: "icon 13",
+            },
+            {
+              src: "/icons/icon14.png",
+              alt: "icon 14",
+            },
+            {
+              src: "/icons/icon15.png",
+              alt: "icon 15",
+            },
+            {
+              src: "/icons/icon16.png",
+              alt: "icon 16",
+            },
+            {
+              src: "/icons/icon17.jpeg",
+              alt: "icon 17",
+            },
+            {
+              src: "/icons/icon18.png",
+              alt: "icon 18",
+            },
+            {
+              src: "/icons/icon19.png",
+              alt: "icon 19",
+            },
+            {
+              src: "/icons/icon20.png",
+              alt: "icon 20",
+            },
+          ]}
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );
